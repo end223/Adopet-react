@@ -29,7 +29,7 @@ const Header = () => {
             <img className='header__user' src={loggedUser} alt="Usuário" />
           </Menu.Button>
           <Menu.Items className='menu__content'>
-            <a className='button' href="/perfil">Ver Perfil</a>
+            <Link className='button' href="/perfil">Ver Perfil</Link>
             <Button handleClick={handleLogout} children="Logout"></Button>
           </Menu.Items>
         </Menu>
@@ -41,7 +41,7 @@ const Header = () => {
             <img className='header__user' src={userPic} alt="Usuário" />
           </Menu.Button>
           <Menu.Items className='menu__content'>
-            <a className='button' href="/login">Login</a>
+            <Link className='button' href="/login">Login</Link>
           </Menu.Items>
         </Menu>
       );

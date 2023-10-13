@@ -22,13 +22,13 @@ const Home = () => {
       <div className='home__buttons'>
         <Link className='button' to='/cadastro'>Ver pets disponíveis para adoção</Link>
         <div>
-          <a className='initial__link' href="/cadastro">Cadastrar</a>
+          <Link className='initial__link' to='/cadastro'>Cadastrar</Link>
           <span style={{ fontSize: 14, padding: '0 1rem', color: '#fff' }}>ou</span>
-          <a className='initial__link' href="/login">Fazer login</a>
+          <Link className='initial__link' to='/login'>Fazer login</Link>
         </div>
       </div>
       <div className="login-button-container">
-  <Link className="login-button" to="/login/abrigo">Fazer login como abrigo</Link>
+  <Link className="login-button" to='/login/abrigo'>Fazer login como abrigo</Link>
 </div>
 
     </motion.section >

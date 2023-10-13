@@ -17,7 +17,7 @@ const HeaderAbrigo = () => {
 
   useEffect(() => {
     if (location.pathname === '/' || location.pathname === '/login/abrigo' || location.pathname === '/home'
-    || location.pathname === '/mensagem' || location.pathname === '/perfil' || location.pathname === '/redefinir-senha') {
+    || location.pathname === '/mensagem' || location.pathname === '/perfil' || location.pathname === '/redefinir-senha' || location.pathname === '/login') {
       setUser('');
     } else if (signedAbrigo) {
       setUser(
@@ -49,7 +49,7 @@ const HeaderAbrigo = () => {
   return (
     <header className='header'>
       <nav>
-        { // Verifique se a rota atual é uma rota de abrigo
+        { 
           location.pathname.startsWith('/dashboard/abrigo') || location.pathname.startsWith('/perfil/abrigo') ? (
             <>
               <Link to="/dashboard/abrigo" className='header__homepet-button'>HomePet</Link>
