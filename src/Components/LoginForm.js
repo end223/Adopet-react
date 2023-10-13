@@ -87,9 +87,9 @@ const LoginForm = () => {
         {errorMessages.general && <p className="error">{errorMessages.general}</p>}
         <Button type="submit" children="Entrar" />
         <p>Ainda não tem conta?</p>
-        <a href="/cadastro" className="register__newUser">
+        <Link href="/cadastro" className="register__newUser">
           Faça seu cadastro
-        </a>
+        </Link>
       </form>
     </motion.section>
   );

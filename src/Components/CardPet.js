@@ -21,7 +21,7 @@ const CardPet = ({ age, size, behavior, abrigo, city, name, img, index, abrigoTe
         <li className='red_text'>{abrigo}</li> 
       </ul>
       <p className='card__city'>{city}</p>
-      <a className='card__contact' href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label='Falar com responsável'>Falar com responsável</a>
+      <Link className='card__contact' href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label='Falar com responsável'>Falar com responsável</Link>
     </div>
   );
 };
