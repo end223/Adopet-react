@@ -1,7 +1,8 @@
 import axios from "axios";
+require("dotenv").config();
 
+const baseURL = process.env.REACT_APP_BACKEND_URL;
 
 export const api = axios.create({
-  baseURL: 'http://localhost:8000' 
+  baseURL: baseURL
 });
-
