@@ -25,8 +25,8 @@ const AnimatedRoutes = () => {
           <Route path='/cadastro' element={<RegisterForm />} />
           <Route path="/esqueci-senha" element={<ForgotPassword />} />
           <Route path="/redefinir-senha/:token" element={<ResetPassword />} />
-          <Route path="/home" element={<PrivateRoute />}>
-          <Route path='/home' element={<Home />} />
+          <Route path="/home" element={<PrivateRoute location={location} />}>
+            <Route path="/home" element={<Home />} />
           </Route>
             <Route path="/perfil" element={<Profile />} />
           <Route path="/mensagem" element={<PrivateRoute />}>

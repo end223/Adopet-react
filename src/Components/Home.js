@@ -59,8 +59,8 @@ const Home = () => {
     name={pet.nome}
     img={pet.imagem} 
     key={pet.id}
-    abrigo={abrigoNames[pet.abrigos_id] ? abrigoNames[pet.abrigos_id].ong : 'Nome do Abrigo não encontrado'} 
-    abrigoTelefone={abrigoNames[pet.abrigos_id] ? abrigoNames[pet.abrigos_id].telefone : 'Telefone não encontrado'} 
+    abrigo={abrigoNames[pet.abrigos_id] ? abrigoNames[pet.abrigos_id].ong : 'Abrigo Privado'} 
+    abrigoTelefone={abrigoNames[pet.abrigos_id] ? abrigoNames[pet.abrigos_id].telefone : 'Entre em Contato'} 
     mensagemPreFormada={`Olá, estou interessado em adotar o pet ${pet.nome}!`} 
   />        
 ))}
