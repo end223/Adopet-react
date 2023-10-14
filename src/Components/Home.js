@@ -50,20 +50,20 @@ const Home = () => {
     <motion.section className='home' initial={{ width: 0 }} animate={{ width: 'auto', transition: { duration: 0.5 } }} exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}>
       <p>Olá! <br /> Veja os amigos disponíveis para adoção!</p>
       <div className='cards'>
-        {pets.map((pet) => (
-          <CardPet
-          age={pet.idade}
-          size={pet.porte}
-          behavior={pet.descricao}
-          city={pet.endereco}
-          name={pet.nome}
-          img={pet.imagem} 
-          key={pet.id}
-          abrigo={abrigoNames[pet.abrigos_id].ong} 
-          abrigoTelefone={abrigoNames[pet.abrigos_id].telefone} 
-          mensagemPreFormada={`Olá, estou interessado em adotar o pet ${pet.nome}!`} 
-        />        
-        ))}
+      {pets.map((pet) => (
+  <CardPet
+    age={pet.idade}
+    size={pet.porte}
+    behavior={pet.descricao}
+    city={pet.endereco}
+    name={pet.nome}
+    img={pet.imagem} 
+    key={pet.id}
+    abrigo={abrigoNames[pet.abrigos_id] ? abrigoNames[pet.abrigos_id].ong : 'Nome do Abrigo não encontrado'} 
+    abrigoTelefone={abrigoNames[pet.abrigos_id] ? abrigoNames[pet.abrigos_id].telefone : 'Telefone não encontrado'} 
+    mensagemPreFormada={`Olá, estou interessado em adotar o pet ${pet.nome}!`} 
+  />        
+))}
       </div>
       <div className="pagination">
         <button onClick={prevPage} disabled={currentPage === 1}>Página anterior</button>
