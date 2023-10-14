@@ -26,7 +26,7 @@ const Home = () => {
     response.data.forEach((abrigo) => {
       abrigoNameMap[abrigo.id] = {
         ong: abrigo.ong,
-        telefone: abrigo.telefone // Adicione o número de telefone do abrigo ao mapa
+        telefone: abrigo.telefone 
       };
     });
         setAbrigoNames(abrigoNameMap);
@@ -59,9 +59,9 @@ const Home = () => {
           name={pet.nome}
           img={pet.imagem} 
           key={pet.id}
-          abrigo={abrigoNames[pet.abrigos_id].ong} // Nome do abrigo
-          abrigoTelefone={abrigoNames[pet.abrigos_id].telefone} // Telefone do abrigo
-          mensagemPreFormada={`Olá, estou interessado em adotar o pet ${pet.nome}!`} // Mensagem pré-formada com o nome do pet
+          abrigo={abrigoNames[pet.abrigos_id].ong} 
+          abrigoTelefone={abrigoNames[pet.abrigos_id].telefone} 
+          mensagemPreFormada={`Olá, estou interessado em adotar o pet ${pet.nome}!`} 
         />        
         ))}
       </div>

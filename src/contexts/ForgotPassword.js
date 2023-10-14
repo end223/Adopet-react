@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { api } from "../api"; // Importe a instância do axios
+import { api } from "../api";
 import Button from "../Components/Button";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";

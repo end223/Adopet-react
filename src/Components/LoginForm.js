@@ -87,7 +87,7 @@ const LoginForm = () => {
         {errorMessages.general && <p className="error">{errorMessages.general}</p>}
         <Button type="submit" children="Entrar" />
         <p>Ainda não tem conta?</p>
-        <Link href="/cadastro" className="register__newUser">
+        <Link to="/cadastro" className="register__newUser">
           Faça seu cadastro
         </Link>
       </form>
